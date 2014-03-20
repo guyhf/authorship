@@ -1,0 +1,14 @@
+    <div id="sidebarContainer">
+      <!-- Start Sidebar wrapper -->
+
+      <div id="sidebar">
+        <!-- Start sidebar content -->
+
+        <h3 class="sideHeader"></h3><!-- Sidebar header -->
+		<p><a href="" target="_blank">Help</a></p>
+		
+		<p><a href="" target="_blank">About</a></p>
+        <!-- sidebar content you enter in the page inspector -->
+        <!-- sidebar content such as the blog archive links -->
+      </div><!-- End sidebar content -->
+    </div><!-- End sidebar wrapper -->

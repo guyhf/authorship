@@ -1,0 +1,12 @@
+{
+  Description     = "Authorship";
+  Provides        = ("Authorship");
+  Requires        = ("Network");
+  Uses            = ("Network");
+  OrderPreference = "Late";
+  Messages =
+  {
+    start = "Starting Authorship";
+    stop  = "Stopping Authorship";
+  };
+}

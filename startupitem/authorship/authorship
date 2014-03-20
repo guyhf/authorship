@@ -1,0 +1,42 @@
+#!/bin/sh
+# Startup script for authweb
+#
+. /etc/rc.common
+
+RETVAL=0
+
+prog="authweb"
+
+start() {
+	echo -n $"Starting $prog: "
+	cd /Library/Server/Web/Data/WebApps/authorship/authorship/app ; ./authwebctl.sh start
+	echo "Done."
+}
+
+stop() {
+	echo -n $"Starting $prog: "
+	cd /Library/Server/Web/Data/WebApps/authorship/app ; ./authwebctl.sh stop
+	echo "Done."
+}
+
+restart() {
+   stop
+   start
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;
+   *)
+    echo $"Usage: $0 {start|stop|restart}"
+    RETVAL=2
+esac
+
+exit $RETVAL
